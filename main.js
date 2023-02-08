@@ -1,16 +1,20 @@
-// Initialize Firebase (ADD YOUR OWN DATA)
-var firebaseConfig = {
-  apiKey: "AIzaSyC31QNHkvdWZM3zb8Dl8aF8EGLTw4fTjo8",
-  authDomain: "jeevanam-e84ba.firebaseapp.com",
-  databaseURL: "https://jeevanam-e84ba.firebaseio.com",
-  projectId: "jeevanam-e84ba",
-  storageBucket: "jeevanam-e84ba.appspot.com",
-  messagingSenderId: "462727649567",
-  appId: "1:462727649567:web:f906a72de6a95e6587b82a",
-  measurementId: "G-VRK70M867Y"
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyDvaIvJXNMlemW14jtkNgdRwfYuVjOTLds",
+  authDomain: "jeevanam-admin.firebaseapp.com",
+  projectId: "jeevanam-admin",
+  storageBucket: "jeevanam-admin.appspot.com",
+  messagingSenderId: "893679429622",
+  appId: "1:893679429622:web:7bffa553bcdf366c6049d7"
 };
+
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
 
 // Reference messages collection
 var messagesRef = firebase.database().ref('Database');
